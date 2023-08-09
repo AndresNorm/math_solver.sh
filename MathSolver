@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Import the math module
+pip install math
+
+# Define a function to solve math problems
+function solve_math_problem {
+  # Get the math problem from the user
+  echo "Enter a math problem:"
+  read problem
+
+  # Solve the math problem using the math module
+  answer=$)")
+
+  # Print the answer to the user
+  echo "The answer is: $answer"
+}
+
+# Main function
+while true; do
+  # Solve a math problem
+  solve_math_problem
+
+  # Ask the user if they want to solve another problem
+  echo "Do you want to solve another math problem? "
+  read answer
+
+  # If the user says no, exit the script
+  if [ "$answer" = "n" ]; then
+    break
+  fi
+done
